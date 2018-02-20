@@ -1,0 +1,90 @@
+ID,Make,Name,Type,Retail Price,Engine Size,Cylinder,Horsepower,City MPG,Weight,Width,Category
+0,Audi,Audi A4 1.8T 4dr,Sedan,25940,1.8,4,170,22,3252,70,1
+1,Audi,Audi A4 3.0 4dr,Sedan,31840,3,6,220,20,3462,70,1
+2,Audi,Audi A4 3.0 convertible 2dr,Sedan,42490,3,6,220,20,3814,70,1
+3,Audi,Audi A4 3.0 Quattro 4dr auto,Sedan,34480,0,6,220,18,3627,70,1
+4,Audi,Audi A6 2.7 Turbo Quattro 4dr,Sedan,42840,2.7,6,250,18,3836,71,1
+5,Audi,Audi A6 3.0 4dr,Sedan,36640,3,6,220,20,3561,71,1
+6,Audi,Audi A6 3.0 Avant Quattro,Wagon,40840,3,6,220,18,4035,71,1
+7,Audi,Audi A6 3.0 Quattro 4dr,Sedan,39640,3,6,220,18,3880,71,1
+8,Audi,Audi A6 4.2 Quattro 4dr,Sedan,49690,4.2,8,300,17,4024,71,1
+9,Audi,Audi A8 L Quattro 4dr,Sedan,69190,4.2,8,330,17,4399,75,1
+10,Audi,Audi RS 6 4dr,Sports Car,84600,4.2,8,450,15,4024,78,1
+11,Audi,Audi S4 Avant Quattro,Wagon,49090,4.2,8,340,15,3936,70,1
+12,Audi,Audi S4 Quattro 4dr,Sedan,48040,4.2,8,340,14,3825,70,1
+13,Audi,Audi TT 1.8 convertible 2dr (coupe),Sports Car,35940,1.8,4,180,20,3131,73,1
+14,Audi,Audi TT 1.8 Quattro 2dr (convertible),Sports Car,37390,1.8,4,225,20,2921,73,1
+15,Audi,Audi TT 3.2 coupe 2dr (convertible),Sports Car,40590,3.2,6,250,21,3351,73,1
+16,BMW,BMW 325Ci 2dr,Sedan,30795,2.5,6,184,20,3197,69,1
+17,BMW,BMW 325Ci convertible 2dr,Sedan,37995,2.5,6,184,19,3560,69,1
+18,BMW,BMW 325i 4dr,Sedan,28495,2.5,6,184,20,3219,69,1
+19,BMW,BMW 325xi 4dr,Sedan,30245,2.5,6,184,19,3461,69,1
+20,BMW,BMW 330i 4dr,Sedan,35495,3,6,225,20,3285,69,1
+21,BMW,BMW 330xi 4dr,Sedan,37245,3,6,225,20,3483,69,1
+22,BMW,BMW 525i 4dr,Sedan,39995,2.5,6,184,19,3428,73,1
+23,BMW,BMW 530i 4dr,Sedan,44995,3,6,225,20,3472,73,1
+24,BMW,BMW 545iA 4dr,Sedan,54995,4.4,8,325,18,3814,73,1
+25,BMW,BMW 745i 4dr,Sedan,69195,4.4,8,325,18,4376,75,1
+26,BMW,BMW 745Li 4dr,Sedan,73195,4.4,8,325,18,4464,75,1
+27,BMW,BMW M3 convertible 2dr,Sports Car,56595,3.2,6,333,16,3781,70,1
+28,BMW,BMW M3 coupe 2dr,Sports Car,48195,3.2,6,333,16,3415,70,1
+29,BMW,BMW X3 3.0i,SUV,37000,3,6,225,16,4023,73,1
+30,BMW,BMW X5 4.4i,SUV,52195,4.4,8,325,16,4824,74,1
+31,BMW,BMW Z4 convertible 2.5i 2dr,Sports Car,33895,2.5,6,184,20,2932,70,1
+32,BMW,BMW Z4 convertible 3.0i 2dr,Sports Car,41045,3,6,225,21,2998,70,1
+33,Dodge,Dodge Caravan SE,Minivan,21795,2.4,4,150,20,3862,79,1
+34,Dodge,Dodge Durango SLT,SUV,32235,4.7,8,230,15,4987,76,1
+35,Dodge,Dodge Grand Caravan SXT,Minivan,32660,3.8,6,215,18,4440,79,1
+36,Dodge,Dodge Intrepid ES 4dr,Sedan,24885,3.5,6,232,18,3487,75,1
+37,Dodge,Dodge Intrepid SE 4dr,Sedan,22035,2.7,6,200,21,3469,75,2
+38,Dodge,Dodge Neon SE 4dr,Sedan,13670,2,4,132,29,2581,67,2
+39,Dodge,Dodge Neon SXT 4dr,Sedan,15040,2,4,132,29,2626,67,2
+40,Dodge,Dodge Stratus SE 4dr,Sedan,20220,2.4,4,150,21,3175,71,2
+41,Dodge,Dodge Stratus SXT 4dr,Sedan,18820,2.4,4,150,21,3182,71,2
+42,Ford,Ford Crown Victoria 4dr,Sedan,24345,4.6,8,224,17,4057,78,2
+43,Ford,Ford Crown Victoria LX 4dr,Sedan,27370,4.6,8,224,17,4057,78,2
+44,Ford,Ford Crown Victoria LX Sport 4dr,Sedan,30315,4.6,8,239,17,4057,78,2
+45,Ford,Ford Escape XLS,SUV,22515,3,6,201,18,3346,70,2
+46,Ford,Ford Expedition 4.6 XLT,SUV,34560,4.6,8,232,15,5000,79,2
+47,Ford,Ford Explorer XLT V6,SUV,29670,4,6,210,15,4463,72,2
+48,Ford,Ford Focus LX 4dr,Sedan,13730,2,4,110,27,2606,67,2
+49,Ford,Ford Focus SE 4dr,Sedan,15460,2,4,130,26,2606,67,2
+50,Ford,Ford Focus SVT 2dr,Sedan,19135,2,4,170,21,2750,67,2
+51,Ford,Ford Focus ZTW,Wagon,17475,2,4,130,26,2702,67,2
+52,Ford,Ford Focus ZX3 2dr hatch,Sedan,13270,2,4,130,26,2612,67,2
+53,Ford,Ford Focus ZX5 5dr,Sedan,15580,2,4,130,26,2691,67,2
+54,Ford,Ford Freestar SE,Minivan,26930,3.9,6,193,17,4275,77,2
+55,Ford,Ford Mustang 2dr (convertible),Sports Car,18345,3.8,6,193,20,3290,73,2
+56,Ford,Ford Mustang GT Premium convertible 2dr,Sports Car,29380,4.6,8,260,17,3347,73,2
+57,Ford,Ford Taurus LX 4dr,Sedan,20320,3,6,155,20,3306,73,2
+58,Ford,Ford Taurus SE,Wagon,22290,3,6,155,19,3497,73,2
+59,Ford,Ford Taurus SES Duratec 4dr,Sedan,22735,3,6,201,19,3313,73,2
+60,Ford,Ford Thunderbird Deluxe convert w/hardtop 2dr,Sports Car,37530,3.9,8,280,17,3780,72,2
+61,Honda,Honda Accord EX 2dr,Sedan,22260,2.4,4,160,26,3047,71,2
+62,Honda,Honda Accord EX V6 2dr,Sedan,26960,3,6,240,21,3294,71,2
+63,Honda,Honda Accord LX 2dr,Sedan,19860,2.4,4,160,26,2994,71,2
+64,Honda,Honda Accord LX V6 4dr,Sedan,23760,3,6,240,21,3349,72,2
+65,Honda,Honda Civic DX 2dr,Sedan,13270,1.7,4,115,32,2432,67,2
+66,Honda,Honda Civic EX 4dr,Sedan,17750,1.7,4,127,32,2601,68,2
+67,Honda,Honda Civic HX 2dr,Sedan,14170,1.7,4,117,36,2500,67,2
+68,Honda,Honda Civic Hybrid 4dr manual (gas/electric),Sedan,20140,1.4,4,93,46,2732,68,2
+69,Honda,Honda Civic LX 4dr,Sedan,15850,1.7,4,115,32,2513,68,2
+70,Honda,Honda Civic Si 2dr hatch,Sedan,19490,2,4,160,26,2782,67,2
+71,Honda,Honda CR-V LX,SUV,19860,2.4,4,160,21,3258,70,2
+72,Honda,Honda Element LX,SUV,18690,2.4,4,160,21,3468,72,2
+73,Honda,Honda Insight 2dr (gas/electric),Sedan,19110,2,3,73,60,1850,67,2
+74,Honda,Honda Odyssey EX,Minivan,27450,3.5,6,240,18,4365,76,2
+75,Honda,Honda Odyssey LX,Minivan,24950,3.5,6,240,18,4310,76,2
+76,Honda,Honda Pilot LX,SUV,27560,3.5,6,240,17,4387,77,2
+77,Honda,Honda S2000 convertible 2dr,Sports Car,33260,2.2,4,240,20,2835,69,2
+78,Hyundai,Hyundai Accent 2dr hatch,Sedan,10539,1.6,4,103,29,2255,66,2
+79,Hyundai,Hyundai Accent GL 4dr,Sedan,11839,1.6,4,103,29,2290,66,2
+80,Hyundai,Hyundai Accent GT 2dr hatch,Sedan,11939,1.6,4,103,29,2339,66,2
+81,Hyundai,Hyundai Elantra GLS 4dr,Sedan,13839,2,4,138,26,2635,68,2
+82,Hyundai,Hyundai Elantra GT 4dr,Sedan,15389,2,4,138,26,2635,68,2
+83,Hyundai,Hyundai Elantra GT 4dr hatch,Sedan,15389,2,4,138,26,2698,68,2
+84,Hyundai,Hyundai Sonata GLS 4dr,Sedan,19339,2.7,6,170,19,3217,72,2
+85,Hyundai,Hyundai Sonata LX 4dr,Sedan,20339,2.7,6,170,19,3217,72,2
+86,Hyundai,Hyundai Tiburon GT V6 2dr,Sports Car,18739,2.7,6,172,19,3023,69,2
+87,Hyundai,Hyundai XG350 4dr,Sedan,24589,3.5,6,194,17,3651,72,2
+88,Hyundai,Hyundai XG350 L 4dr,Sedan,26189,3.5,6,194,17,3651,72,2

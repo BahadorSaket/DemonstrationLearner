@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DemoLearner</title>
+		<link href="frontend/css/main.css" rel="stylesheet">
+
+		<!-- D3 -->
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+<!-- 		<script src="https://d3js.org/d3.v4.min.js"></script> -->
+		
+		<!-- FileSaving -->
+		 <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
+	     <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
+	     
+		<!-- JQuery UI -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  		<!-- Font Awsome -->
+  	    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        
+		<!-- Style Sheet -->
+  	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+  		<!--Additional Libs -->
+  		<!-- <script src="frontend/lib/jquery.js"></script>  -->
+		<script src="frontend/lib/jquery.nice-select.js"></script>
+		<link rel="stylesheet" href="frontend/lib/nice-select.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<div class="viewPanel">	
+				<div class= "viewSwitch" style="float:left;">	
+				    <button class="button devButton">Developer View</button>
+					<button class="button userButton">User View</button>
+				</div>
+				<div class="devMenu" style="display: inline-block; margin:0 auto;float: right">
+					<div class=" importButton">
+							<input id="filebutton" type="file" style="display:none;" onchange="readMultipleFiles(function(){ $('#filebutton').val(null); addInteractivity();});"/>
+							<span class="myIcon upload" onclick="document.getElementById('filebutton').click()" ><i class="fa fa-upload fa-1x" ></i></span>
+							<span class="myText">Import Visualization</span>
+					</div>
+					<div class="featureBtnContainer" style="padding-left: 5px; display:none; text-align: center; width: 100px">
+							<span onclick="" ><i class="featureBtn fas fa-sliders-h"></i></span> </br>
+							<span class="myText">Feature Selection</span>
+						    <div id="featureMenu">
+								<div class="featureMenuHeader" style=" padding-bottom:10px;" >
+									<div class="scatterplotFeatureMenue featureMenu" style="display:none;" >
+									   <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Position" />
+									        <div class="state">
+									           <label>Position</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Color"/>
+									        <div class="state" >
+									            <label>Color</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Radius"/>
+									        <div class="state">
+									            <label>Radius</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Shape"/>
+									        <div class="state">
+									            <label>Shape</label>
+									        </div>
+									    </div></br></br></br>
+									   	<div style=" float: left;">
+              								<a class="applyFeatureChanges" style="text-decoration:none !important;" href="#" onclick="">Apply</a>
+              							</div>
+              							<div style=" float: right;">
+              								<a class="cancelFeatureChanges" style="text-decoration:none !important;" href="#" onclick="">Cancel</a>
+              							</div>
+
+									</div>
+
+									<div class="barchartFeatureMenue featureMenu" style="display:none;" >
+									   <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Position"/>
+									        <div class="state">
+									            <label>Position</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Color"/>
+									        <div class="state">
+									            <label>Color</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Width"/>
+									        <div class="state">
+									            <label>Width</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="Height"/>
+									        <div class="state">
+									            <label>Height</label>
+									        </div>
+									    </div></br></br></br>
+									   	<div style=" float: left;">
+              								<a class="applyFeatureChanges" style="text-decoration:none !important;" href="#" onclick="">Apply</a>
+              							</div>
+              							<div style=" float: right;">
+              								<a class="cancelFeatureChanges" style="text-decoration:none !important;" href="#" onclick="">Cancel</a>
+              							</div>
+									</div>
+
+
+									<div class="graphFeatureMenue featureMenu" style="display:none;">
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="NodePosition"/>
+									        <div class="state">
+									            <label>Node Position</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="NodeColor"/>
+									        <div class="state">
+									            <label>Node Color</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="NodeRadius"/>
+									        <div class="state">
+									            <label>Node Radius</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="NodeShape"/>
+									        <div class="state">
+									            <label>Node Shape</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="LinkColor"/>
+									        <div class="state">
+									            <label>Link Color</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="LinkWidth"/>
+									        <div class="state">
+									            <label>Link Width</label>
+									        </div>
+									    </div></br></br>
+									    <div class="pretty p-default" style="float:left">
+									        <input type="checkbox" value="LinkShape"/>
+									        <div class="state">
+									            <label>Link Shape</label>
+									        </div>
+									    </div></br></br></br>
+									   	<div style=" float: left;">
+              								<a class="applyFeatureChanges"  style="text-decoration:none !important;" href="#" onclick="">Apply</a>
+              							</div>
+              							<div style=" float: right;">
+              								<a class="cancelFeatureChanges" style="text-decoration:none !important;" href="#" onclick="">Cancel</a>
+              							</div>
+									</div>
+
+								</div>
+							</div> 
+
+					</div>	
+
+				</div>
+			</div>
+			<div class="developerView" >
+						<div id="dialog" class="dialog" style="display:none">
+						  <div style="margin:5px 2px 0px 2px; font: 8px sans-serif;">
+							   <input type="color" value="#ff0000" id="colorWell">
+						  </div>
+					</div>
+				<div id="visContainer"style="float:left;" >
+		
+				</div>
+
+				<div id="taskCustomPanel">
+				</div>
+			</div>
+
+
+		<!-- 	<div class="userView" style="display:none">
+				<div id="mainVis">
+
+				</div>
+				<div class="left">
+					<div id="questionContainer">
+						<div class="question" id="0"> 
+							<div class="questionDescription">
+						       <h4>Start the Experiment </h4> 
+						    </div>
+							<div class="nextButton">
+								<button class="qButton button2" onclick="showNextQ()">Start</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</body>
+
+	<!-- Source code for  (Note: in ECMAScript6 - need to use babel to compile) -->
+	<script src="./frontend/src/main.js" charset="utf8"></script>
+	<script src="./frontend/src/readFile.js" charset="utf8"></script>
+	<script src="./frontend/src/loadTask.js" charset="utf8"></script>
+    <script src="./frontend/src/addInteractivity.js" charset="utf8"></script>
+    <script src="./frontend/src/barAddInteraction.js" charset="utf8"></script>
+</html>
